@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/*= require normalize-css
+ */
+/* 設定 */
+/* line 1, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+
+
+.contactContent { 
+    text-align: center;
+}
+
+.svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .svg-icon {
+      width: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .svg-icon {
+      width: 16px;
+    }
+    }
+  
+.workCard {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .workCard h3 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    background-color: #454138;
+  }
+  
+  .project-grid {
+    list-style-type: none;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  */
+    gap: 0.5rem; /* Adjust the gap between project cards as needed */
+  }
+  
+  .project-card:hover {
+    box-shadow: 5px 20px 10px rgba(109, 107, 99, 0.5);
+    opacity: 1;
+  }
+  
+  .project-card {
+  
+    padding: 0.5rem; /* Add padding as desired */
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: all 1.0s ease-out 0s;
+    /* Add any other styling for the project card */
+  }
+  
+.project-content { 
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 2px solid rgba(123, 220, 181, 0.5); */
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    
+}
+.project-content-top { 
+    margin: -0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #454138;
+    /* color: #bab5a1; */
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-language::before { /* removes black line before paragraphs */
+    content: none;
+}
+
+.project-language { 
+    color: #454138;
+    font-family: "Space Mono", "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.75;
+    height: 30px;
+}
+
+
+.sectionContent { 
+    display: box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    /* background-color: #dcd8c0; */
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.sectionContent-works { 
+    display: box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 12rem;
+    background-color: inherit;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+#github-icon { 
+    width:30px;
+    height:30px;
+}
+
+.project-card-footer { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 20px;
+    color: #454138;
+}
+
+
+p { 
+    font-size: 14px;
+    position: relative;
+}
+
+h2 {
+    font-weight: normal;
+    border: solid #454138;
+    border-width: 0.1rem 0;
+    padding: 0.1rem 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.sectionContainer { 
+    margin-top: -40px;
+}
+ 
+header {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  /* line 7, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+  header .jamesTitle {
+    float: left; 
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    /* text-shadow: 0.3rem 0.3rem 0 #bab5a1; */
+}
+    @media only screen and (max-width: 850px) {
+      /* line 7, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+      header .jamesTitle {
+        width: 100%;
+        text-align: center;
+        float: none; } }
+    /* line 13, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+    header .jamesTitle a {
+      display: block;
+      width: 180px; }
+      @media only screen and (max-width: 850px) {
+        /* line 13, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+        header .jamesTitle a {
+          margin: 0 auto;
+          width: 280px; } }
+      /* line 19, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+      /* header .logo a img {
+        width: 100%; } */
+  /* line 21, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+  header ul {
+    float: left;
+    margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+ }
+    @media only screen and (max-width: 850px) {
+      /* line 21, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+      header ul {
+        margin: 20px 0 20px 0; } }
+    /* line 28, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+    header ul li {
+      float: left;
+      list-style: none;
+      line-height: 48px;
+      margin-right: 35px;
+      height: 35px;
+     }
+      @media only screen and (max-width: 850px) {
+        /* line 28, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+        header ul li {
+          margin-bottom: 10px; } }
+      /* line 36, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+      header ul li a {
+        text-decoration: none;
+        display: block;
+        height: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:#454138;
+        font-style: italic;
+    }
+        /* line 42, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+        header ul li a.about {
+          width: 69px;     
+        }
+          /* background-image: url(../images/about_off.png); } */
+        /* line 45, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+        header ul li a.works {
+          width: 71px;
+        }
+          /* background-image: url(../images/works_off.png); } */
+        /* line 48, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+        header ul li a.blog { 
+            width: 48px;
+        }
+        header ul li a.contact {
+          width: 92px;
+        }
+
+          /* background-image: url(../images/contact_off.png); } */
+
+#about { 
+    height: auto;
+    border-radius: 20px;
+    margin-top: 65px;
+}
+
+#about li {
+    list-style-type: square;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+#works { 
+    height: auto;
+}
+
+#blog { 
+    height: auto;
+}
+
+#contact { 
+    height: auto;
+}
+
+/* line 65, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+/* body.about header ol li a.about {
+  background-image: url(../images/about_on.png); } */
+
+/* line 72, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+/* body.works header ol li a.works {
+  background-image: url(../images/works_on.png); } */
+
+/* line 80, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+/* body.live header ol li a.live {
+  width: 60px;
+  background-image: url(../images/live_on.png); } */
+
+/* line 87, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+/* body.goods header ol li a.goods {
+  background-image: url(../images/goods_on.png); } */
+
+/* line 94, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+/* body.pale header ol li a.pale {
+  background-image: url(../images/pale_on.png);
+  width: 60px;} */
+
+/* line 101, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+body.contact header ol li a.contact {
+  background-image: url(../images/contact_on.png); }
+
+/* line 104, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+footer {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center; }
+  /* line 108, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_header.sass */
+  footer p.copyright {
+    font-size: 10px; }
+
+
+.footer-icon { 
+    padding:10px;
+}
+/* line 1, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-wrap {
+  width: 100%;
+  text-align: center; }
+
+/* line 4, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form {
+  width: 100%;
+  max-width: 640px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  padding-top: 20px; }
+  @media only screen and (max-width: 850px) {
+    /* line 4, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+    .contact-form {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 10px;
+      min-height: auto; } }
+
+/* line 16, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+input {
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 0; }
+
+/* line 21, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form input[type="text"] {
+  border: none;
+  border-bottom: solid 1px #777;
+  width: 100%;
+  max-width: 640px;
+  background: none; }
+  @media only screen and (max-width: 850px) {
+    /* line 21, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+    .contact-form input[type="text"] {
+      width: 100%; } }
+
+/* line 30, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form input[placeholder="お名前(必須)"] {
+  font-size: 1em; }
+
+/* line 33, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form input[placeholder="メールアドレス(必須)"] {
+  font-size: 1em; }
+
+/* line 36, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form input[placeholder="件名(必須)"] {
+  font-size: 1em; }
+
+/* line 39, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form textarea[placeholder="お問い合わせ内容(必須)"] {
+  font-size: 1em; }
+
+/* line 43, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+.contact-form textarea {
+  border: solid 1px #777;
+  width: 100%;
+  max-width: 640px;
+  height: 150px;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background: none;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 850px) {
+    /* line 43, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+    .contact-form textarea {
+      width: 100%; } }
+
+/* line 56, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+ul.contact {
+  padding-left: 0; }
+
+/* line 59, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+li {
+  list-style: none; }
+
+/* line 64, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+input {
+  width: 100%;
+  max-width: 640px; }
+  @media only screen and (max-width: 850px) {
+    /* line 64, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+    input {
+      width: 100%; } }
+
+/* line 71, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+input[type="submit"] {
+  background: black;
+  font-size: 1em;
+  border: none;
+  color: #FFF !important;
+  margin-top: 20px;
+  font-weight: 600 !important;
+  padding: 8px 30px;
+  display: inline-block;
+  letter-spacing: 2px; }
+
+/* line 83, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/_contact.sass */
+input[type="submit"]:hover {
+  background: #fff100;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+/* line 14, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+/* p {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif, ".HiraKakuInterface-W2", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue"; } */
+
+/* line 17, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+/* h1, h2 {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif, ".HiraKakuInterface-W2", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue"; } */
+
+/* line 20, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+/* .page-thumbnail {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; } */
+  /* line 24, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+  /* .page-thumbnail img {
+    width: 100%; } */
+
+/* line 27, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 850px) {
+    /* line 27, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+    .wrapper {
+      padding: 0 15px;
+      box-sizing: border-box; } }
+  .wrapper section {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 15px 0;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 850px) {
+      /* line 47, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+      .wrapper .contents-chunk iframe {
+        width: 100% !important; } }
+    /* line 50, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+    /* .wrapper .contents-chunk img.pale {
+      width: 50%;
+      margin: 0 auto; } */
+    /* line 53, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+    .wrapper .contents-chunk p.date {
+      text-align: right; }
+    @media only screen and (max-width: 850px) {
+      /* line 55, /Users/c5_yuk/yuWorks/mujina/source/stylesheets/all.sass */
+      .wrapper .contents-chunk p {
+        margin-bottom: 30px; } }
