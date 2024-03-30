@@ -94,7 +94,7 @@ function App() {
                     <li>An open-minded conversationalist ready to dive into thought-provoking discussions ranging across tech, music, philosophy, and beyond.</li>
                   </ul>
                   <h3>Programming Langages and Tools</h3>
-                  <img src="https://skillicons.dev/icons?i=js,html,css,c,postgres,perl,py,java,vscode,regex,react,vite,md,gitlab,github)](https://skillicons.dev" alt="languages" />
+                  <img src="https://skillicons.dev/icons?i=js,html,css,c,postgres,perl,nextjs,py,github,java,react,vite,)](https://skillicons.dev" alt="languages" />
                 </div> 
                 
               </section>
@@ -114,6 +114,25 @@ function App() {
               marginLeft='20px'
         
             > 
+             <Grid item xs={12} sm={6} md={4}> 
+                <figure class="project-card"> 
+                  <figcaption class="project-content-top">
+                    <a href="https://github.com/unsw-cse-comp3900-9900-23T2/capstone-project-3900h16afivepeople">Food Voucher App</a>
+                  </figcaption>
+                    <div class="project-content"> 
+                      <header> 
+                        <p>Group project web app for food vouchers in your area. </p>
+                      </header >
+                      <footer class="project-card-footer"> 
+                        <p class="project-language">Python/ReactJS/SQLITE</p>
+                        <a href="https://github.com/unsw-cse-comp3900-9900-23T2/capstone-project-3900h16afivepeople" class="footer-icon"> 
+                          <img src={githubIcon} alt="github-icon" class="svg-icon" />  
+                        </a> 
+                      </footer>
+                    </div> 
+                </figure>
+              </Grid>
+              
               <Grid item xs={12} sm={6} md={4}>
                 <figure class="project-card"> 
                   <figcaption class="project-content-top">
@@ -153,24 +172,7 @@ function App() {
                   </figure>
               </Grid>
 
-              <Grid item xs={12} sm={6} md={4}> 
-                <figure class="project-card"> 
-                  <figcaption class="project-content-top">
-                    <a href="https://github.com/sonicmujina/Minesweeper">Minesweeper</a>
-                  </figcaption>
-                    <div class="project-content"> 
-                      <header> 
-                        <p>Terminal version of Minesweeper.</p>
-                      </header >
-                      <footer class="project-card-footer"> 
-                        <p class="project-language">C</p>
-                        <a href="https://github.com/sonicmujina/Minesweeper" class="footer-icon"> 
-                          <img src={githubIcon} alt="github-icon" class="svg-icon" />  
-                        </a> 
-                      </footer>
-                    </div> 
-                </figure>
-              </Grid>
+             
             </Grid>    
               </div>
             </section>
@@ -182,8 +184,8 @@ function App() {
             <section ref={contactRef} id="contact">
               <h2>Contact</h2>
               <div class="contactContent">
-                <p>jamesmlee88@gmail.com</p>
-                <h3 style={{marginBottom: '-10px'}}>Based In</h3>
+                <p>jamesleework02@gmail.com</p>
+                <h3 style={{marginBottom: '-10px'}}>Based in</h3>
                 <p>Sydney, NSW</p>  
 
                 <a href='https://www.linkedin.com/in/james-lee-33290426a/' class="footer-icon"> 
